@@ -83,15 +83,32 @@ Function Design through Multimodal Large Language Models</h1>
 
             <div class="is-size-5 publication-authors">
               <div class="author-affiliations">
-                <span class="author-block"><sup>1</sup>China State Key Lab of CAD&CG, Zhejiang University, Hangzhou, China</span>
-                <div style="text-align: center; margin: 10px 0;">
-                  <span style="font-weight: bold;">1</span>
-                  <a href="https://zjuvai.cn/" target="_blank">
-                    <img src="static/images/avatar.jpg" alt="China State Key Lab of CAD&CG" style="max-width: 150px; margin: 5px auto 10px;">
-                  </a>
-                </div>
+                <span class="author-block"><sup>1</sup>China State Key Lab of CAD&CG, Zhejiang University, Hangzhou, China</span><br>
                 <span class="author-block"><sup>2</sup>Zhejiang University, Hangzhou, China</span><br>
                 <span class="author-block"><sup>3</sup>Zhejiang University of Finance and Economics, Hangzhou, China</span>
+                
+                <div style="display: flex; justify-content: center; margin: 15px 0;">
+                  <div style="text-align: center; margin: 0 10px;">
+                    <span style="font-weight: bold;">1</span>
+                    <a href="https://zjuvai.cn/" target="_blank">
+                      <img src="static/images/avatar.jpg" alt="China State Key Lab of CAD&CG" style="max-width: 150px; margin: 5px auto 10px; display: block;">
+                    </a>
+                  </div>
+                  
+                  <div style="text-align: center; margin: 0 10px;">
+                    <span style="font-weight: bold;">2</span>
+                    <a href="https://www.zju.edu.cn/" target="_blank">
+                      <img src="static/images/avatar.jpg" alt="Zhejiang University" style="max-width: 150px; margin: 5px auto 10px; display: block;">
+                    </a>
+                  </div>
+                  
+                  <div style="text-align: center; margin: 0 10px;">
+                    <span style="font-weight: bold;">3</span>
+                    <a href="https://www.zufe.edu.cn/" target="_blank">
+                      <img src="static/images/avatar.jpg" alt="Zhejiang University of Finance and Economics" style="max-width: 150px; margin: 5px auto 10px; display: block;">
+                    </a>
+                  </div>
+                </div>
               </div>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
@@ -150,23 +167,6 @@ Function Design through Multimodal Large Language Models</h1>
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/vis25a-sub1146-i8.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -175,8 +175,16 @@ Function Design through Multimodal Large Language Models</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Direct Volume Rendering (DVR) is a fundamental technique for visualizing volumetric data, with transfer functions (TFs) playing a crucial role in extracting meaningful visual representations. However, designing effective TFs remains unintuitive due to the semantic gap between users' visual intent and the low-level parameters. Recent approaches leveraging vision-language models have shown promise while still facing a fundamental trilemma involving interaction intuitiveness, computational efficiency, and generalizability. This paper introduces a novel framework that addresses these challenges through three key innovations: (1) an intuitive multimodal interaction paradigm enabling users to express design goals using both natural and visual language, (2) a hybrid system integrating human prior knowledge with visual feedback for automated exploration of the TF space, and (3) a formalized volume rendering quality assessment framework based on vision-language models to provide optimal and generalizable visual feedback. The proposed system empowers both novices and experts to explore and customize volume visualizations efficiently. We validate our approach through comprehensive experiments and a detailed case study.
           </p>
+        </div>
+        
+        <!-- Teaser video moved here -->
+        <div class="hero-body" style="padding-top: 2rem; padding-bottom: 0;">
+          <video poster="" id="tree" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/vis25a-sub1146-i8.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -184,128 +192,71 @@ Function Design through Multimodal Large Language Models</h1>
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
+<!-- Evaluation Section -->
 <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Evaluation</h2>
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="content has-text-justified">
+            <p>
+              Analysis of evolutionary algorithm parameters on transfer function optimization. (A) Average rankings over iterations for different population
+              sizes (10-200), showing that larger populations achieve more stable improvements with continued iterations while smaller populations show early
+              rapid gains but unstable convergence. (B) Comparison of optimization effectiveness across different computational budgets (measured by LLM API
+              calls), demonstrating that medium-small populations (25-50) perform better under limited resources, while larger populations (100-200) achieve
+              superior results when computational resources are abundant.
+            </p>
+            <img src="static/images/analysis_of_evolutionary.png" alt="Analysis of evolutionary algorithm parameters" width="100%">
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Evaluation Section -->
 
-
-<!-- Video carousel -->
+<!-- Case Study Section -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Case Study</h2>
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="content has-text-justified">
+            <img src="static/images/case.png" alt="Case study examples" width="100%">
+            <p>
+              Examples of transfer functions designed using our approach. The first row showcases cases where design intent is expressed
+              through text. Users input text descriptions and our approach automatically designs transfer functions to achieve high-quality volume
+              rendering results corresponding to these descriptions. The second row demonstrates cases where design intent is conveyed through
+              images. When users cannot clearly articulate their ideas verbally, they can directly provide reference images to express their intent in
+              visual form. In each example of the second row, the small image in the bottom right corner represents the user intent in the form of a
+              reference image. Reference images for (A) and (B) are from other works, (C) uses the rendered image from the third example in the
+              first row, and (D) utilizes Vincent van Gogh's "The Starry Night."
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+<!-- End Case Study Section -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@Article{kerbl3Dgaussians,
+      author       = {Kerbl, Bernhard and Kopanas, Georgios and Leimk{\"u}hler, Thomas and Drettakis, George},
+      title        = {3D Gaussian Splatting for Real-Time Radiance Field Rendering},
+      journal      = {ACM Transactions on Graphics},
+      number       = {4},
+      volume       = {42},
+      month        = {July},
+      year         = {2023},
+      url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -318,7 +269,7 @@ Function Design through Multimodal Large Language Models</h1>
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
